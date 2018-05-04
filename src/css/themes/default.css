@@ -1,0 +1,73 @@
+
+body.default .resume{
+    max-width:800px;
+    margin:0 auto;
+    /* border:1px solid blue;     */
+}
+
+body.default .resume>section{
+    margin: 50px 0;
+}
+
+body.default .resume>section>h1{
+    text-align: center;
+    margin: 20px;
+}
+
+body.default .resume>section>h2{
+    text-align: center;
+    margin: 20px;
+}
+
+body.default .resume .profile{
+    text-align: center;
+}
+
+body.default .resume .skills>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body.default .resume .skills >ul>li{
+    width:48%;
+    border: solid #8AF1C1 1px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+body.default .resume .profile p{
+    border: solid #8AF1C1 1px;
+    border-radius: 5px;
+}
+
+.resume .projects{
+
+}
+
+.resume .projects>ol{
+
+}
+
+body.default .resume .projects>ol>li{
+    margin: 30px 0;
+    border:solid #8AF1C1 1px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body.default .resume .projects header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+body.default .resume .projects header .start{
+    display: flex;
+}
+
+body.default .resume .projects header .name{
+    margin-right: 1em;
+}

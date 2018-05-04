@@ -1,0 +1,25 @@
+.share{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    min-width: 300px;
+    /* min-height: 400px; */
+    background: #92E3F1;
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    /* box-shadow: 0 0 0px 10000px rgba(0,0,0,0.5); */
+    box-shadow:0 0 5px black;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.share textarea{
+    width:100%;
+    resize:none;
+    height: 4em;
+    word-break: break-all;
+    
+}
+

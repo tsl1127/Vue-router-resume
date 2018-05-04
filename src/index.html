@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>简历编辑器</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/signUp.css">
+    <link rel="stylesheet" href="./css/share.css">
+    <link rel="stylesheet" href="./css/print.css" media="print">
+    <link rel="stylesheet" href="./css/skinPicker.css">
+    <link rel="stylesheet" href="./css/themes/default.css">
+    <link rel="stylesheet" href="./css/themes/dark.css">
+</head>
+<body class="default">
+    <div class="page" id="app">
+
+ <!-- <app-edit @onclicksave="onClickSave" @onshare="onShare" @onprint="print" @changetheme="changeTheme" @changemode="changeMode" @onlogout="onLogout"  :mode="mode" :display-resume="displayResume" :resume="resume" :logoutvisible="hasLogin()"></app-edit>
+
+    <login v-show="loginVisible" @close="loginVisible=false" @login="faonLogin" @gotosignup="gotosignup"></login>
+
+    <sign-up v-show="signUpVisible" @gotologin="gotologin" @signup="faonsignup" @closesignup="signUpVisible=false"></sign-up>
+
+    <share v-show="shareVisible" :share-link="shareLink"></share>  
+    <skin-picker v-show="skinPickerVisible"></skin-picker>
+    
+    <button @click="exitPreview" class="exitPreview" v-if="mode==='preview'">退出预览</button> -->
+
+    <router-view
+        :mode="mode"
+        :display-resume="displayResume"
+        :resume="resume"
+        :logoutvisible="hasLogin()"
+        @onclicksave="onClickSave"
+        @onshare="onShare"
+        @onprint="print"
+        @changetheme="changeTheme"
+        @changemode="changeMode"
+        @onlogout="onLogout"
+        @exitpreview="exitPreview"
+
+        @login="faonLogin"
+        @signup="faonsignup"
+
+        :share-visible="shareVisible"
+        :share-link="shareLink"
+
+        :skin-picker-visible="skinPickerVisible"
+
+    ></router-view>
+</div>
+
+
+
+    <script src="../vendors/av-min.js"></script>
+    <script src="./js/av.js"></script>
+    <script src="../vendors/vue.min.js"></script>
+    <script src="../vendors/vue-router.min.js"></script>
+    <script src="./js/editable-span.js"></script>
+    <script src="./js/login.js"> </script>
+    <script src="./js/signUp.js"></script>
+    <script src="./js/share.js"></script>
+    <script src="./js/skinPicker.js"></script>
+    <script src="./js/app-aside.js"></script>
+    <script src="./js/resume.js"></script>
+    <script src="./js/app-edit.js"></script>    
+    <script src="./js/app.js"></script>
+    <!-- <script src="./js/router.js"></script> -->
+</body>
+</html>
